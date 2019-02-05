@@ -1,0 +1,13 @@
+
+redirectMatch 301 ^(.*)$ http://lgjam.cf
+ErrorDocument 400 http://lgjam.cf/404
+ErrorDocument 401 http://lgjam.cf/401
+ErrorDocument 403 http://lgjam.cf/403
+ErrorDocument 404 http://lgjam.cf/404
+ErrorDocument 503 http://lgjam.cf/503
+#####THE FOLLOWING IS REQUIRED FOR PROTECTED FOLDERS
+AuthUserFile /home/vol14_1/byethost17.com/b17_23171921/lgjam.cf/htdocs///.htpasswd.f891c12e0d9642bd2b184f55134687b3
+AuthName password_required
+AuthType Basic
+Require valid-user
+########END REQUIRE
